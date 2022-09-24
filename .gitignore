@@ -1,0 +1,11 @@
+**/target/
+*.iml
+.classpath
+.idea
+.project
+.settings
+abandoned/
+bin/
+generated-srcs/
+out/
+.DS_Store

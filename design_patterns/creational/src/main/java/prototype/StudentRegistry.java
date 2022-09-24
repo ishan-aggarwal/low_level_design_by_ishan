@@ -6,7 +6,7 @@ import java.util.Map;
 public class StudentRegistry implements IRegistry<String, Student> {
     private static StudentRegistry instance = null;
 
-    private Map<String, Student> registry;
+    private final Map<String, Student> registry;
 
     private StudentRegistry() {
         this.registry = new HashMap<>();

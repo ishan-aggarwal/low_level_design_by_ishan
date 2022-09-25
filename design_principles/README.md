@@ -51,5 +51,91 @@
           the code of the Order class and risk breaking it.
         - You can solve the problem by applying the Strategy pattern. Start by extracting shipping methods into separate
           classes with a common interface.
+        - Now when you need to implement a new shipping method, you can derive a new class from the Shipping interface
+          without touching any of the Order class’ code. The client code of the Order class will link orders with a
+          shipping object of the new class whenever the user selects this shipping methods in the UI.
+        - As a bonus, this solution let you move the delivery time and cost calculation to more relevant classes,
+          according to the single responsibility principle.
 
 ## Liskov Substitution Principle
+
+- When extending a class, remember that you should be able to pass objects of the subclass in place of objects of the
+  parent class without breaking the client code.
+- This means that the subclass should remain compatible with the behavior of the superclass.
+- When overriding a method, extend the base behavior rather than replacing it with something else entirely.
+- **Importance**: This concept is critical when developing libraries and frameworks because your classes are going to be
+  used by other people whose code you can’t directly access and change.
+- LSP says that child class should support at-least all the behaviour of parent class, so that if you replace the
+  parent reference with chile reference, then you don't need to make any changes on the client code saying this method
+  is not supported in child class.
+- LSP says object of any class should be **as-is** substitutable in a variable reference of parent type without
+  requiring any code changes.
+- **Important points to keep in mind**
+    - **Parameter types in a method of a subclass should match or be more abstract than parameter types in the method of
+      the superclass**.
+      Sounds confusing? Let’s have an example. Say there’s a class with a method that’s supposed to feed cats: feed(Cat
+      c). Client code always passes cat objects into this method.
+      ◦ **Good**: Say you created a subclass that overrode the method so that it can feed any animal (a superclass of
+      cats):feed(Animal c) . Now if you pass an object of this subclass instead of an object of the superclass to the
+      client code, everything would still work fine. The method can feed all animals, so it can still feed any cat
+      passed by the client.
+      ◦ **Bad**: You created another subclass and restricted the feeding method to only accept Bengal cats (a subclass
+      of cats):feed(BengalCat c) . What will happen to the client code if you link it with an object like this instead
+      of with the original class? Since the method can only feed a specific breed of cats, it won’t serve generic cats
+      passed by the client, breaking all related functionality.
+    - **The return type in a method of a subclass should match or be a subtype of the return type in the method of the
+      superclass.**
+      As you can see, requirements for a return type are inverse to requirements for parameter types. Say you have a
+      class with a method buyCat(): Cat . The client code expects to receive any cat as a result of executing this
+      method.
+      ◦ **Good**: A subclass overrides the method as follows: buyCat(): BengalCat . The client gets a Bengal cat, which
+      is still a cat, so everything is okay.
+      ◦ **Bad**: A subclass overrides the method as follows: buyCat(): Animal . Now the client code breaks since it
+      receives an unknown generic animal (an alligator? a bear?) that doesn’t fit a structure designed for a cat.
+      Another anti-example comes from the world of programming languages with dynamic typing: the base method returns a
+      string, but the overridden method returns a number.
+    - **A method in a subclass shouldn’t throw types of exceptions which the base method isn’t expected to throw.**
+    - **A subclass shouldn’t strengthen pre-conditions.**
+    - **A subclass shouldn’t weaken post-conditions.**
+    - **Invariants of a superclass must be preserved.**
+    - **A subclass shouldn’t change values of private fields of the superclass.**
+- For example,
+    - The save method in the ReadOnlyDocuments subclass throws an exception if someone tries to call it. The base method
+      doesn’t have this restriction. This means that the client code will break if we don’t check the document type
+      before saving it.
+      The resulting code also violates the open/closed principle, since the client code becomes dependent on concrete
+      classes of documents. If you introduce a new document subclass, you’ll need to change the client code to support
+      it.
+    - You can solve the problem by redesigning the class hierarchy: a subclass should extend the behavior of a
+      superclass, therefore the read-only document becomes the base class of the hierarchy. The writable document is now
+      a subclass which extends the base class and adds the saving behavior.
+
+## Interface Segregation Principle
+
+- Clients shouldn’t be forced to depend on methods they do not use.
+- Interfaces should be as light as possible, they should have as less methods as possible.
+- Ideally interfaces should have only 1 method.
+- You should break down “fat” interfaces into more granular and specific ones. Clients should implement only those
+  methods that they really need. Otherwise, a change to a “fat” interface would break even clients that don’t use the
+  changed methods.
+
+## Dependency Inversion Principle
+
+- High-level classes shouldn’t depend on low-level classes. Both should depend on abstractions. Abstractions shouldn’t
+  depend on details. Details should depend on abstractions.
+- No two concrete classes should directly depend on each other. They should depend on each other via an interface.
+- For example, for a software engineer - never depend on a specific company, just depend on getting a job.
+- For example,
+    - the high-level budget reporting class uses a low-level database class for reading and persisting its data. This
+      means that any change in the low-level class, such as when a new version of the database server gets released, may
+      affect the high-level class, which isn’t supposed to care about the data storage details.
+    - You can fix this problem by creating a high-level interface that describes read/write operations and making the
+      reporting class use that interface instead of the low-level class. Then you can change or extend the original
+      low-level class to implement the new read/write interface declared by the business logic.
+    - As a result, the direction of the original dependency has been inverted: low-level classes are now dependent on
+      high-level abstractions.
+
+**Dependency Injection**
+
+- Dependency Injection is not part of SOLID design principals. It simply states that if a class A has an attribute of
+  class B, then class A depends on class B.

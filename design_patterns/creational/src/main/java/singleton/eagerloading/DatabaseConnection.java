@@ -1,11 +1,13 @@
 package singleton.eagerloading;
 
 public class DatabaseConnection {
-    private static DatabaseConnection databaseConnection = new DatabaseConnection();
+    private static final DatabaseConnection databaseConnection = new DatabaseConnection();
 
-    private DatabaseConnection() {}
+    private DatabaseConnection() {
+    }
 
-    // Not going to work in a concurrent environment
+    // Eager loading of the object creation
+    // Object will still be created in case no one makes a request to getInstance method
     public static DatabaseConnection getInstance() {
         return databaseConnection;
     }

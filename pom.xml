@@ -22,6 +22,7 @@
         <module>design_patterns/creational</module>
         <module>design_patterns/structural</module>
         <module>design_patterns/behavioural</module>
+        <module>design_principles</module>
     </modules>
 
     <dependencies>

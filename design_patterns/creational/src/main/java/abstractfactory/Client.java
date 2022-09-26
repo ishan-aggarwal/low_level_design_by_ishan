@@ -3,6 +3,9 @@ package abstractfactory;
 import abstractfactory.components.buttons.Button;
 import abstractfactory.components.dropdowns.Dropdown;
 import abstractfactory.components.menus.Menu;
+import abstractfactory.model.Color;
+import abstractfactory.model.Font;
+import abstractfactory.model.Shape;
 
 public class Client {
 
@@ -12,6 +15,10 @@ public class Client {
         Flutter flutter = new Flutter(Platform.ANDROID);
         UIFactory uiFactory = flutter.createUIFactory();
 
+        flutter.setColor(Color.BLUE);
+        flutter.setShape(Shape.SQUARE);
+        flutter.setFont(Font.SMALL);
+
         Button button = uiFactory.createButton();
         Dropdown dropdown = uiFactory.createDropdown();
         Menu menu = uiFactory.createMenu();
@@ -20,6 +27,7 @@ public class Client {
         dropdown.displayDropdown();
         menu.displayMenu();
         System.out.println();
+
         // For Windows
         flutter = new Flutter(Platform.WINDOWS);
         uiFactory = flutter.createUIFactory();

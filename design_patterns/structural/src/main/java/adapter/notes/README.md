@@ -60,3 +60,5 @@ other one. It can be implemented in all popular programming languages.
    However, you’ll need to duplicate the code across all of these new classes, which smells really bad.)
 
 # Problem1. Fitting square pegs into round holes
+
+# Problem2. Stock market monitoring app. App gets stock data in XML format from various sources and displays charts. You decide to integrate the app with Analytics lib, but needs input in JSON format.

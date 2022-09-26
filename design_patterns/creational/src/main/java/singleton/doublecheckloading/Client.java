@@ -2,9 +2,9 @@ package singleton.doublecheckloading;
 
 public class Client {
     public static void main(String[] args) {
-        DatabaseConnection databaseConnection = DatabaseConnection.getInstance("db");
+        DatabaseConnection databaseConnection = DatabaseConnection.getInstance();
         System.out.println(databaseConnection.hashCode());
-        databaseConnection = DatabaseConnection.getInstance("db");
+        databaseConnection = DatabaseConnection.getInstance();
         System.out.println(databaseConnection.hashCode());
     }
 }

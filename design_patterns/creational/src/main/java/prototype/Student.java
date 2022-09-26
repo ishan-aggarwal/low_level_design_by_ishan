@@ -2,25 +2,27 @@ package prototype;
 
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Setter
 @NoArgsConstructor
-public class Student implements IPrototype<Student> {
+@ToString
+public class Student implements Prototype<Student> {
 
     private String name;
     private int age;
     private float psp;
 
-    private StudentBatchEnum batch;
+    private Batch batch;
     private float averageBatchPSP;
 
-    public Student(Student other) {
-        this.name = other.name;
-        this.age = other.age;
-        this.psp = other.psp;
+    public Student(Student student) {
+        this.name = student.name;
+        this.age = student.age;
+        this.psp = student.psp;
 
-        this.batch = other.batch;
-        this.averageBatchPSP = other.averageBatchPSP;
+        this.batch = student.batch;
+        this.averageBatchPSP = student.averageBatchPSP;
     }
 
     @Override

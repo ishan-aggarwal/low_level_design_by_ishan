@@ -1,6 +1,6 @@
 package prototype;
 
-public interface IRegistry<K, V> {
+public interface Registry<K, V> {
 
     void register(K key, V value);
 

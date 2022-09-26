@@ -2,9 +2,11 @@ package prototype;
 
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @NoArgsConstructor
 @Setter
+@ToString
 public class IntelligentStudent extends Student {
 
     private int iq;

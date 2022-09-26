@@ -1,6 +1,6 @@
 package prototype;
 
-public interface IPrototype<T> {
+public interface Prototype<T> {
 
     T clone();
 

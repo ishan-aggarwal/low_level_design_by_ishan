@@ -3,7 +3,7 @@ package prototype;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StudentRegistry implements IRegistry<String, Student> {
+public class StudentRegistry implements Registry<String, Student> {
     private static StudentRegistry instance = null;
 
     private final Map<String, Student> registry;
@@ -20,16 +20,16 @@ public class StudentRegistry implements IRegistry<String, Student> {
     private void fillRegistry() {
 
         Student student = new Student();
-        student.setBatch(StudentBatchEnum.APRIL_21_BATCH_STUDENT);
+        student.setBatch(Batch.APRIL_21_BATCH);
         student.setAverageBatchPSP(81.0f);
 
         IntelligentStudent intelligentStudent = new IntelligentStudent();
         intelligentStudent.setIq(75);
-        intelligentStudent.setBatch(StudentBatchEnum.APRIL_21_BATCH_INTELLIGENT_STUDENT);
+        intelligentStudent.setBatch(Batch.APRIL_21_INTELLIGENT_BATCH);
         intelligentStudent.setAverageBatchPSP(91.0f);
 
-        register(StudentBatchEnum.APRIL_21_BATCH_STUDENT.getValue(), student);
-        register(StudentBatchEnum.APRIL_21_BATCH_INTELLIGENT_STUDENT.getValue(), intelligentStudent);
+        register(Batch.APRIL_21_BATCH.getValue(), student);
+        register(Batch.APRIL_21_INTELLIGENT_BATCH.getValue(), intelligentStudent);
     }
 
 

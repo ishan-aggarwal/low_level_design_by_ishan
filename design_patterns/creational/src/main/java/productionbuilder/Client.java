@@ -10,8 +10,7 @@ public class Client {
 //        Student st = builder.build();
 //        Student st = new Student(null);
 
-        Student student
-                = Student.getBuilder()
+        Student student = Student.getBuilder()
                 .setName("Ishan Aggarwal")
                 .setId(1)
                 .setAge(35)

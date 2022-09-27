@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TreeTypeFactory {
-    static Map<String, TreeType> treeTypes = new HashMap<>();
+    private static final Map<String, TreeType> treeTypes = new HashMap<>();
 
     public static TreeType getTreeType(String name, Color color, String otherTreeData) {
         TreeType result = treeTypes.get(name);

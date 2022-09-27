@@ -1,11 +1,14 @@
 package flyweight;
 
+import lombok.Getter;
+
 import java.awt.*;
 
+@Getter
 public class TreeType {
-    private String name;
-    private Color color;
-    private String otherTreeData;
+    private final String name;
+    private final Color color;
+    private final String otherTreeData;
 
     public TreeType(String name, Color color, String otherTreeData) {
         this.name = name;

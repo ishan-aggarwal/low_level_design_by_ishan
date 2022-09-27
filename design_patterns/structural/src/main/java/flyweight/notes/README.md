@@ -26,3 +26,21 @@ particular set of values.
 The client code isn’t going to notice anything since the complexity of reusing flyweight objects is buried inside a
 flyweight factory.
 
+**Applicability**
+
+1. Use the Flyweight pattern only when your program must support a huge number of objects which barely fit into
+   available RAM.
+    - an application needs to spawn a huge number of similar objects
+    - this drains all available RAM on a target device
+    - the objects contain duplicate states which can be extracted and shared between multiple objects
+
+**Relations with Other Patterns**
+
+- Flyweight shows how to make lots of little objects, whereas Facade shows how to make a single object that represents
+  an entire subsystem.
+
+- Flyweight would resemble Singleton if you somehow managed to reduce all shared states of the objects to just one
+  flyweight object. But there are two fundamental differences between these patterns:
+    - There should be only one Singleton instance, whereas a Flyweight class can have multiple instances with different
+      intrinsic states.
+    - The Singleton object can be mutable. Flyweight objects are immutable.

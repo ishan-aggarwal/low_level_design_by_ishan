@@ -3,9 +3,9 @@ package flyweight;
 import java.awt.*;
 
 public class Client {
-    static int CANVAS_SIZE = 500;
-    static int TREES_TO_DRAW = 1000000;
-    static int TREE_TYPES = 2;
+    private static final int CANVAS_SIZE = 500;
+    private static final int TREES_TO_DRAW = 1000000;
+    private static final int TREE_TYPES = 2;
 
     public static void main(String[] args) {
         Forest forest = new Forest();

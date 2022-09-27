@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Forest extends JFrame {
-    private List<Tree> trees = new ArrayList<>();
+    private static final List<Tree> trees = new ArrayList<>();
 
     public void plantTree(int x, int y, String name, Color color, String otherTreeData) {
         TreeType type = TreeTypeFactory.getTreeType(name, color, otherTreeData);

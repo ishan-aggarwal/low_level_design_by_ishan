@@ -23,6 +23,9 @@
         <module>design_patterns/structural</module>
         <module>design_patterns/behavioural</module>
         <module>design_principles</module>
+        <module>low_level_design</module>
+        <module>low_level_design/service-orchestrator</module>
+        <module>low_level_design/design-pen</module>
     </modules>
 
     <dependencies>

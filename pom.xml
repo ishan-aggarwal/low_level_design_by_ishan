@@ -26,6 +26,7 @@
         <module>low_level_design</module>
         <module>low_level_design/service-orchestrator</module>
         <module>low_level_design/design-pen</module>
+        <module>low_level_design/design-tictactoe</module>
     </modules>
 
     <dependencies>

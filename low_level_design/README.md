@@ -1,6 +1,6 @@
 # Low Level Design Questions
 
-## Design a Pen
+## Design a Pen (Entity Low Level Design)
 
     ### Overview
     ### Requirements
@@ -16,3 +16,7 @@
       - Every pen has a brand and a name.
       - Some pens may allow refilling while others might not.
     ### Requirement Clarifications
+
+## Design Tic Tac Toe (Real World - Interactive Game)
+
+## Design Service Orchestrator

@@ -7,7 +7,5 @@
 
 Purpose -
 
-- They try to convert one format to other to allow working with a device not directly supported.
-- Adapter DP allows a class to work with another class that is not directly supported.
-- Always consider using adapter dp when you have to work with 3rd party APIs
+- Use this majorly to avoid class explosion that is caused by IS-A 
 

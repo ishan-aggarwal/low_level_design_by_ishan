@@ -11,9 +11,18 @@ public class Zoo {
 
 //        List<Flyable> flyableBirds = List.of(new Penguin()); // Is not allowed as Penguin is not of Flyable type
         List<Flyable> flyableBirds = List.of(new Sparrow(), new Crow(), new Owl(), new Peacock());
+        flyableBirds.forEach(
+                b -> b.fly()
+        );
+
     }
 
     public void birdRace(List<Bird> birds) {
+
+//        birds.forEach(
+//                b -> b.fly()
+//        );
+
         System.out.println(birds);
     }
 }

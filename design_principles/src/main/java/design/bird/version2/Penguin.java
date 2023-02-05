@@ -7,7 +7,8 @@ public class Penguin extends Bird {
     // throw some exception
     @Override
     public void fly() {
-
+        //
+        throw new RuntimeException("I can not fly");
     }
 
     @Override

@@ -28,6 +28,7 @@
         <module>low_level_design/design-pen</module>
         <module>low_level_design/design-tictactoe</module>
         <module>low_level_design/Others</module>
+        <module>low_level_design/design-nullobject-handler</module>
     </modules>
 
     <dependencies>

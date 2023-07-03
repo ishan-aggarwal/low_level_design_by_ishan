@@ -1,4 +1,4 @@
-package flyweight;
+package flyweight.example1;
 
 import lombok.Getter;
 

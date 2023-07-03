@@ -1,6 +1,6 @@
-package adapter.example4;
+package adapter.learn;
 
-import adapter.example4.friend.PilotPen;
+import adapter.learn.friend.PilotPen;
 
 // This is the adapter class that we will use in our code.
 // It will implement the interface that we want to use in our code.

@@ -5,6 +5,9 @@
 - The pattern achieves it by sharing parts of object state between multiple objects.
 - In other words, the Flyweight saves RAM by caching the same data used by different objects.
 
+Flyweight is a structural design pattern that lets you fit more objects into the available amount of RAM by sharing
+common parts of state between multiple objects instead of keeping all of the data in each object.
+
 **Usage examples**: The Flyweight pattern has a single purpose: minimizing memory intake. If your program doesn’t
 struggle with a shortage of RAM, then you might just ignore this pattern for a while.
 

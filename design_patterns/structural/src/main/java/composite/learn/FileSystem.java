@@ -1,4 +1,4 @@
-package composite.example1;
+package composite.learn;
 
 public interface FileSystem {
     void ls();

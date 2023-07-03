@@ -1,6 +1,6 @@
-package composite.example1;
+package composite.learn;
 
-public class Client {
+public class ClientApp {
 
     // The client code can work with any component that follows the component interface.
     // output:

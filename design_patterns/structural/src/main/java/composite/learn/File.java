@@ -1,4 +1,4 @@
-package composite.example1;
+package composite.learn;
 
 public class File implements FileSystem {
     private String name;

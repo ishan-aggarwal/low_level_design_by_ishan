@@ -9,6 +9,7 @@
     </parent>
     <modules>
         <module>rate-limiter</module>
+        <module>design-splitwise</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 

@@ -2,25 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>lld_by_ishan</artifactId>
         <groupId>com.ishan</groupId>
+        <artifactId>low_level_design</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <modules>
-        <module>rate-limiter</module>
-        <module>design-splitwise</module>
-        <module>dsign-amazon-locker</module>
-        <module>cm</module>
-    </modules>
-    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>low_level_design</artifactId>
-    <packaging>pom</packaging>
+    <groupId>org.ishan</groupId>
+    <artifactId>cm</artifactId>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

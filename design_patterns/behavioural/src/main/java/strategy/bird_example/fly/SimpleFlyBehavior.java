@@ -1,4 +1,4 @@
-package strategy.fly;
+package strategy.bird_example.fly;
 
 public class SimpleFlyBehavior implements FlyBehavior {
 

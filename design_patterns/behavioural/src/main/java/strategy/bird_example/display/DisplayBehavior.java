@@ -1,4 +1,4 @@
-package strategy.display;
+package strategy.bird_example.display;
 
 public interface DisplayBehavior {
 

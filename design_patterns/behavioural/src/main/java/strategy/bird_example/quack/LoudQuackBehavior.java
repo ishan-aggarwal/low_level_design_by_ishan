@@ -1,4 +1,4 @@
-package strategy.quack;
+package strategy.bird_example.quack;
 
 public class LoudQuackBehavior implements QuackBehavior {
 

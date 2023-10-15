@@ -1,8 +1,8 @@
-package strategy;
+package strategy.bird_example;
 
-import strategy.display.DisplayBehavior;
-import strategy.fly.FlyBehavior;
-import strategy.quack.QuackBehavior;
+import strategy.bird_example.display.DisplayBehavior;
+import strategy.bird_example.fly.FlyBehavior;
+import strategy.bird_example.quack.QuackBehavior;
 
 public class Duck {
 

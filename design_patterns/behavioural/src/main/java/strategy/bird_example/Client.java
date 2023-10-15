@@ -1,14 +1,14 @@
-package strategy;
+package strategy.bird_example;
 
-import strategy.display.DisplayBehavior;
-import strategy.display.FancyDisplayBehavior;
-import strategy.display.SimpleDisplayBehavior;
-import strategy.fly.FlyBehavior;
-import strategy.fly.JetFlyBehavior;
-import strategy.fly.SimpleFlyBehavior;
-import strategy.quack.LoudQuackBehavior;
-import strategy.quack.QuackBehavior;
-import strategy.quack.SimpleQuackBehavior;
+import strategy.bird_example.display.DisplayBehavior;
+import strategy.bird_example.display.FancyDisplayBehavior;
+import strategy.bird_example.display.SimpleDisplayBehavior;
+import strategy.bird_example.fly.FlyBehavior;
+import strategy.bird_example.fly.JetFlyBehavior;
+import strategy.bird_example.fly.SimpleFlyBehavior;
+import strategy.bird_example.quack.LoudQuackBehavior;
+import strategy.bird_example.quack.QuackBehavior;
+import strategy.bird_example.quack.SimpleQuackBehavior;
 
 // Note: here we have family of algorithms for various different behaviors
 // Each algorithm encapsulates the complete algorithm (in form of display(), fly() and quack() methods

@@ -9,6 +9,8 @@ public class SeniorManager extends Handler {
             System.out.println("Senior Manager cannot approve " + request.getType());
             if (next != null) {
                 next.handleRequest(request);
+            } else {
+                System.out.println("No one can approve " + request.getType());
             }
         }
     }

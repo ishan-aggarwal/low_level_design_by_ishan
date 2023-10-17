@@ -1,4 +1,4 @@
-package observer;
+package observer.ex1;
 
 public class DemoClient {
 

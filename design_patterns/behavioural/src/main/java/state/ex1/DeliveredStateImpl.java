@@ -1,6 +1,4 @@
-package state;
-
-import visitor.car_service.MainApplication;
+package state.ex1;
 
 import java.util.HashMap;
 import java.util.Map;

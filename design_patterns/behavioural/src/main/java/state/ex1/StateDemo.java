@@ -1,4 +1,4 @@
-package state;
+package state.ex1;
 
 public class StateDemo {
     public static void main(String[] args) {

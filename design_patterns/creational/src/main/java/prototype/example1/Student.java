@@ -1,4 +1,4 @@
-package prototype;
+package prototype.example1;
 
 import lombok.NoArgsConstructor;
 import lombok.Setter;

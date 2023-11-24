@@ -1,7 +1,11 @@
 package bridge;
 
 public class Fish extends LivingThings {
-    Fish(Breath breathImplementer) {
-        super(breathImplementer);
+    private final Breath breath = new WaterBreathImpl();
+
+    @Override
+    public void breath() {
+        System.out.println("Fish is breathing");
+        this.breath.process();
     }
 }

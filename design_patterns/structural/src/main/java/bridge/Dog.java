@@ -1,8 +1,11 @@
 package bridge;
 
 public class Dog extends LivingThings {
-    public Dog(Breath breathImplementer) {
-        super(breathImplementer);
-    }
+    private final Breath breath = new LandBreathImpl();
 
+    @Override
+    public void breath() {
+        System.out.println("Dog is breathing");
+        this.breath.process();
+    }
 }

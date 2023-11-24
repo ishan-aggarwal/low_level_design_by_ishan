@@ -5,10 +5,10 @@ package bridge;
 
 public class Main {
     public static void main(String[] args) {
-        LivingThings fish = new Fish(new WaterBreathImpl());
+        LivingThings fish = new Fish();
         fish.breath();
 
-        LivingThings dog = new Fish(new LandBreathImpl());
+        LivingThings dog = new Dog();
         dog.breath();
     }
 }

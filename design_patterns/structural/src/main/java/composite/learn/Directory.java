@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Directory implements FileSystem {
-    private String name;
-    private List<FileSystem> children;
+    private final String name;
+    private final List<FileSystem> children;
 
 
     public Directory(String name) {

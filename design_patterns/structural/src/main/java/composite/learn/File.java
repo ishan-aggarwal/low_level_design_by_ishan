@@ -1,7 +1,7 @@
 package composite.learn;
 
 public class File implements FileSystem {
-    private String name;
+    private final String name;
 
     public File(String name) {
         this.name = name;

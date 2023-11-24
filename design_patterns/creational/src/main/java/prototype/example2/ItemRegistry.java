@@ -6,7 +6,6 @@ import java.util.Map;
 public class ItemRegistry {
 
     private static final Map<String, Item> items = new HashMap<>();
-    ;
 
     public ItemRegistry() {
         loadItems();

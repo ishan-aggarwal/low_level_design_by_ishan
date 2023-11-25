@@ -3,17 +3,17 @@ package template.networks;
 /**
  * Base class of social network.
  */
-public abstract class Network {
+public abstract class SocialNetwork {
     String userName;
     String password;
 
-    Network() {
+    SocialNetwork() {
     }
 
     /**
      * Publish the data to whatever network.
      */
-    public boolean post(String message) {
+    public final boolean post(String message) {
         // Authenticate before posting. Every network uses a different
         // authentication method.
         if (logIn(this.userName, this.password)) {

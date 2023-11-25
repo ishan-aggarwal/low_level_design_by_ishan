@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 public class Demo {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        Network network = null;
+        SocialNetwork socialNetwork = null;
         System.out.print("Input user name: ");
         String userName = reader.readLine();
         System.out.print("Input password: ");
@@ -25,12 +25,15 @@ public class Demo {
                 "2 - Twitter");
         int choice = Integer.parseInt(reader.readLine());
 
-        // Create proper network object and send the message.
+        // Create proper socialNetwork object and send the message.
         if (choice == 1) {
-            network = new Facebook(userName, password);
+            socialNetwork = new Facebook(userName, password);
         } else if (choice == 2) {
-            network = new Twitter(userName, password);
+            socialNetwork = new Twitter(userName, password);
+        } else {
+            System.out.println("Wrong choice!");
+            return;
         }
-        network.post(message);
+        boolean status = socialNetwork.post(message);
     }
 }

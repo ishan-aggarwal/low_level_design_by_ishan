@@ -3,7 +3,7 @@ package template.networks;
 /**
  * Class of social network
  */
-public class Facebook extends Network {
+public class Facebook extends SocialNetwork {
     public Facebook(String userName, String password) {
         this.userName = userName;
         this.password = password;

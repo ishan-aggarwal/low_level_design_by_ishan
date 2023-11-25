@@ -3,7 +3,7 @@ package template.networks;
 /**
  * Class of social network
  */
-public class Twitter extends Network {
+public class Twitter extends SocialNetwork {
 
     public Twitter(String userName, String password) {
         this.userName = userName;

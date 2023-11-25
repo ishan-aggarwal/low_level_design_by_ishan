@@ -2,10 +2,10 @@ package facade;
 
 public class Facade {
 
-    private ProductService productService;
-    private InvoiceService invoiceService;
-    private PaymentService paymentService;
-    private NotificationService notificationService;
+    private final ProductService productService;
+    private final InvoiceService invoiceService;
+    private final PaymentService paymentService;
+    private final NotificationService notificationService;
 
     public Facade() {
         productService = new ProductService();

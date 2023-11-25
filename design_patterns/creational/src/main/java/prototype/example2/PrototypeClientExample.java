@@ -19,5 +19,17 @@ public class PrototypeClientExample {
         System.out.println(anotherMovie.getPrice());
         System.out.println(anotherMovie.getLength());
 
+
+        Movie anotherMovie1 = (Movie) registry.createItem("Movie");
+        anotherMovie1.setTitle("Gang of Four");
+
+        System.out.println(anotherMovie1);
+        System.out.println(anotherMovie1.getTitle());
+        System.out.println(anotherMovie1.getPrice());
+        System.out.println(anotherMovie1.getLength());
+
+        System.out.println(movie.hashCode());
+        System.out.println(anotherMovie.hashCode());
+        System.out.println(anotherMovie1.hashCode());
     }
 }

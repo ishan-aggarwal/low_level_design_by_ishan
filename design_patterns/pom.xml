@@ -8,6 +8,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>creational</module>
+        <module>structural</module>
+        <module>behavioural</module>
+    </modules>
 
     <artifactId>design_patterns</artifactId>
     <packaging>pom</packaging>

@@ -7,22 +7,15 @@
         <groupId>com.ishan</groupId>
         <artifactId>low_level_design</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.ishan</groupId>
-    <artifactId>dsign-amazon-locker</artifactId>
+    <artifactId>apply-coupons-on-shopping-cart</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
-        </dependency>
-    </dependencies>
 
 </project>

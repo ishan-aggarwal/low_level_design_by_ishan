@@ -8,9 +8,15 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modules>
-        <module>rate-limiter</module>
+        <module>apply-coupons-on-shopping-cart</module>
+        <module>design-amazon-locker</module>
+        <module>design-nullobject-handler</module>
+        <module>design-pen</module>
         <module>design-splitwise</module>
-        <module>dsign-amazon-locker</module>
+        <module>design-tictactoe</module>
+        <module>Others</module>
+        <module>rate-limiter</module>
+        <module>service-orchestrator</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 

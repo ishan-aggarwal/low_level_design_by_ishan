@@ -17,6 +17,7 @@
         <module>Others</module>
         <module>rate-limiter</module>
         <module>service-orchestrator</module>
+        <module>newsletter-subscription</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 

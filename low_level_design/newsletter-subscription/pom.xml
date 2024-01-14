@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>apply-coupons-on-shopping-cart</artifactId>
+    <artifactId>newsletter-subscription</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

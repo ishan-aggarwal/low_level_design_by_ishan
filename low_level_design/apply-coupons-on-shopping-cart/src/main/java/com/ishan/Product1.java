@@ -1,7 +1,8 @@
 package com.ishan;
 
-public class Item2 extends Product {
-    public Item2(String name, double originalPrice, ProductType productType) {
+public class Product1 extends Product {
+
+    public Product1(String name, double originalPrice, ProductType productType) {
         super(name, originalPrice, productType);
     }
 

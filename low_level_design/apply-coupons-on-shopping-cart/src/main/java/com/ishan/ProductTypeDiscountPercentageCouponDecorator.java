@@ -3,7 +3,7 @@ package com.ishan;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TypeCouponDecorator extends CouponDecorator {
+public class ProductTypeDiscountPercentageCouponDecorator extends CouponDecorator {
 
     Product product;
     double discountPercentage;
@@ -17,7 +17,7 @@ public class TypeCouponDecorator extends CouponDecorator {
         eligibleProductTypes.add(ProductType.FURNITURE_GOODS);
     }
 
-    public TypeCouponDecorator(Product product, double discountPercentage, ProductType productType) {
+    public ProductTypeDiscountPercentageCouponDecorator(Product product, double discountPercentage, ProductType productType) {
         this.product = product;
         this.discountPercentage = discountPercentage;
         this.productType = productType;

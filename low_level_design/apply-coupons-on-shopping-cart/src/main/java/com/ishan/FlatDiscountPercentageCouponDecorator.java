@@ -1,11 +1,11 @@
 package com.ishan;
 
-public class PercentageCouponDecorator extends CouponDecorator {
+public class FlatDiscountPercentageCouponDecorator extends CouponDecorator {
 
     Product product;
     double discountPercentage;
 
-    public PercentageCouponDecorator(Product product, double discountPercentage) {
+    public FlatDiscountPercentageCouponDecorator(Product product, double discountPercentage) {
         this.product = product;
         this.discountPercentage = discountPercentage;
     }

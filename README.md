@@ -7,10 +7,10 @@ This repository contains a collection of detailed low-level design problems, str
 
 1. Object-Oriented Programming (OOP) [:link:](/oop/)
 2. SOLID Design Principles [:link:](/design_principles/)
-3. Design Patterns 
-   - [Creational](#creational)
-   - [Structural](#structural)
-   - [Behavioral](#behavioral)
+3. Design Patterns [🔗](/design_patterns/)
+   - Creational [🔗](/design_patterns/creational/)
+   - Structural [🔗](/design_patterns/structural/)
+   - Behavioral [🔗](/design_patterns/behavioural/)
 4. [Low-Level Design Problems](#low-level-design-problems)
    - [Apply Coupons on Shopping Cart](#apply-coupons-on-shopping-cart)
    - [Design Amazon Locker](#design-amazon-locker)

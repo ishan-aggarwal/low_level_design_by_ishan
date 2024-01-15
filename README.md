@@ -1,10 +1,11 @@
 # Low-Level Design Series by Ishan
 
-Welcome to the Low-Level Design (LLD) series by Ishan! 🚀 This repository contains a collection of detailed low-level design problems, structured into different modules covering Object-Oriented Programming (OOP), SOLID design principles, design patterns (Creational, Structural, Behavioral), and specific low-level design problems.
+Welcome to the Low-Level Design (LLD) series by Ishan! 🚀 💻 
+This repository contains a collection of detailed low-level design problems, structured into different modules covering Object-Oriented Programming (OOP), SOLID design principles, design patterns (Creational, Structural, Behavioral), and specific low-level design problems.
 
 ## Table of Contents
 
-1. [Object-Oriented Programming (OOP)](#oop)
+1. Object-Oriented Programming (OOP) [:link:](/oop/)
 2. [SOLID Design Principles](#solid-design-principles)
 3. [Design Patterns](#design-patterns)
    - [Creational](#creational)

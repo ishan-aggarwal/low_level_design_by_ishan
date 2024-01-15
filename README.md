@@ -3,6 +3,8 @@
 ## Low Level Design Problems
 
 - Design Apply coupons on shopping cart | Decorator Structural Design Pattern example
+- Design Newsletter subscription | Observable Behavioural Design Pattern example
+- Design Request Scheduler | Command Behavioural Design Pattern example
 - Design Amazon Locker
 - Design Null Object Handler
 - Design Pen

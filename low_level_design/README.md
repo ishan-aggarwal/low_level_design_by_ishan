@@ -2,6 +2,10 @@
 
 ## Design Apply coupons on shopping cart | Decorator Structural Design Pattern example
 
+## Design Newsletter subscription | Observable Behavioural Design Pattern example
+
+## Design Request Scheduler | Command Behavioural Design Pattern example
+
 ## Design a Pen (Entity Low Level Design)
 
     ### Overview

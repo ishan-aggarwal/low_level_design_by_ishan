@@ -6,8 +6,8 @@ This repository contains a collection of detailed low-level design problems, str
 ## Table of Contents
 
 1. Object-Oriented Programming (OOP) [:link:](/oop/)
-2. [SOLID Design Principles](#solid-design-principles)
-3. [Design Patterns](#design-patterns)
+2. SOLID Design Principles [:link:](/design_principles/)
+3. Design Patterns 
    - [Creational](#creational)
    - [Structural](#structural)
    - [Behavioral](#behavioral)

@@ -12,10 +12,10 @@ public class ChatMediatorImpl implements ChatMediator {
     }
 
     @Override
-    public void sendMessage(User senderUser, String message) {
+    public void sendMessage(ChatClient client, String message) {
         for (Map.Entry<User, ChatClient> entry : userChatClientMap.entrySet()) {
-            if (entry.getKey() != senderUser) {
-                entry.getValue().receive(senderUser, entry.getKey(), message);
+            if (entry.getValue() != client) {
+                entry.getValue().receive(client.getUser(), entry.getKey(), message);
             }
         }
         System.out.println("----------------------------------------------------");

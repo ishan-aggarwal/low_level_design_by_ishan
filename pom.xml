@@ -18,8 +18,8 @@
 
     <modules>
         <module>oop</module>
-        <module>design_patterns</module>
         <module>design_principles</module>
+        <module>design_patterns</module>
         <module>low_level_design</module>
     </modules>
 

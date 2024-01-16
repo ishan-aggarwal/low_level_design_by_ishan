@@ -1,7 +1,7 @@
 package mediator;
 
 public interface ChatMediator {
-    void sendMessage(User user, String message);
+    void sendMessage(ChatClient client, String message);
 
     void register(User user, ChatClient chatClient);
 }

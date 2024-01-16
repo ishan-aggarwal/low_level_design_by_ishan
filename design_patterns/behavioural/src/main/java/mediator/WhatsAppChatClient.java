@@ -8,12 +8,13 @@ public class WhatsAppChatClient extends ChatClient {
 
     @Override
     public void register(User user) {
+        this.user = user;
         chatMediator.register(user, this);
     }
 
     @Override
-    public void send(User sender, String message) {
-        chatMediator.sendMessage(sender, message);
+    public void send(String message) {
+        chatMediator.sendMessage(this, message);
     }
 
     @Override

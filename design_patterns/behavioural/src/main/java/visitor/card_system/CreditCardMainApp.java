@@ -1,5 +1,8 @@
 package visitor.card_system;
 
+// m * n
+// where m is the total types of offers on-going - which will have one visit method for each type of credit card
+// and n is the total types of credit cards - which will accept the offer
 public class CreditCardMainApp {
     public static void main(String[] args) {
         CreditCard[] cards = {new GoldCreditCard(), new SilverCreditCard(), new BronzeCreditCard()};
@@ -20,6 +23,5 @@ public class CreditCardMainApp {
             card.accept(visitor);
         }
         System.out.println("=====================================");
-
     }
 }

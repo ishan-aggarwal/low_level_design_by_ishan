@@ -21,6 +21,7 @@ specific low-level design problems.
     - Design TicTacToe Version 1 [:link:](/low_level_design/design-tictactoe-v1/)
     - Design TicTacToe [:link:](/low_level_design/design-tictactoe/)
     - Design Car Rental System [:link:](/low_level_design/design-car-rental-system/)
+    - Design Logging System [:link:](/low_level_design/design-logging-system/)
     - Design Amazon Locker [:link:](/low_level_design/design-amazon-locker/)
     - Design Splitwise [:link:](/low_level_design/design-splitwise/)
     - Others [:link:](/low_level_design/Others/)

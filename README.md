@@ -20,6 +20,7 @@ specific low-level design problems.
     - Design Null Object Handler [:link:](/low_level_design/design-nullobject-handler/)
     - Design TicTacToe Version 1 [:link:](/low_level_design/design-tictactoe-v1/)
     - Design TicTacToe [:link:](/low_level_design/design-tictactoe/)
+    - Design Snake and Ladder [:link:](/low_level_design/design-snake-and-ladder/)
     - Design Car Rental System [:link:](/low_level_design/design-car-rental-system/)
     - Design Logging System [:link:](/low_level_design/design-logging-system/)
     - Design Amazon Locker [:link:](/low_level_design/design-amazon-locker/)

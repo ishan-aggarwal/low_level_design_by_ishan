@@ -19,6 +19,7 @@
         <module>service-orchestrator</module>
         <module>newsletter-subscription</module>
         <module>request-scheduler</module>
+        <module>design-tictactoe-v1</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 

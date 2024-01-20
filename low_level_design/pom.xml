@@ -20,6 +20,7 @@
         <module>newsletter-subscription</module>
         <module>request-scheduler</module>
         <module>design-tictactoe-v1</module>
+        <module>design-car-rental-system</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 

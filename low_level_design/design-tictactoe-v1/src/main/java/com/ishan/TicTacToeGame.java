@@ -92,6 +92,8 @@ public class TicTacToeGame extends Game {
         boolean antiDiagonalMatch = true;
 
         // need to check in row
+        // check if all the cells in the row have the same pieceType
+        // if there is a cell which is null or has a different pieceType, then there is no row match winner
         for (int i = 0; i < gameBoard.size; i++) {
             if (gameBoard.board[row][i] == null || gameBoard.board[row][i].pieceType != pieceType) {
                 rowMatch = false;
@@ -99,7 +101,14 @@ public class TicTacToeGame extends Game {
             }
         }
 
+        // if there is a row match, then there is a winner
+        if (rowMatch) {
+            return true;
+        }
+
         // need to check in column
+        // check if all the cells in the column have the same pieceType
+        // if there is a cell which is null or has a different pieceType, then there is no column match winner
         for (int i = 0; i < gameBoard.size; i++) {
             if (gameBoard.board[i][column] == null || gameBoard.board[i][column].pieceType != pieceType) {
                 columnMatch = false;
@@ -107,7 +116,14 @@ public class TicTacToeGame extends Game {
             }
         }
 
+        // if there is a column match, then there is a winner
+        if (columnMatch) {
+            return true;
+        }
+
         // need to check diagonals
+        // check if all the cells in the diagonal have the same pieceType
+        // if there is a cell which is null or has a different pieceType, then there is no diagonal match winner
         for (int i = 0, j = 0; i < gameBoard.size; i++, j++) {
             if (gameBoard.board[i][j] == null || gameBoard.board[i][j].pieceType != pieceType) {
                 diagonalMatch = false;
@@ -115,14 +131,23 @@ public class TicTacToeGame extends Game {
             }
         }
 
+        // if there is a diagonal match, then there is a winner
+        if (diagonalMatch) {
+            return true;
+        }
+
         // need to check anti-diagonals
+        // check if all the cells in the anti-diagonal have the same pieceType
+        // if there is a cell which is null or has a different pieceType, then there is no anti-diagonal match winner
         for (int i = 0, j = gameBoard.size - 1; i < gameBoard.size; i++, j--) {
             if (gameBoard.board[i][j] == null || gameBoard.board[i][j].pieceType != pieceType) {
                 antiDiagonalMatch = false;
                 break;
             }
         }
-        return rowMatch || columnMatch || diagonalMatch || antiDiagonalMatch;
+
+        // if there is an anti-diagonal match, then there is a winner
+        return antiDiagonalMatch;
     }
 }
 

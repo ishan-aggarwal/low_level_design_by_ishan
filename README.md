@@ -1,9 +1,9 @@
 # Low-Level Design Series by Ishan
 
 Welcome to the Low-Level Design (LLD) series by Ishan! 🚀 💻
-This repository contains a collection of detailed low-level design problems, structured into different modules covering
-Object-Oriented Programming (OOP), SOLID design principles, design patterns (Creational, Structural, Behavioral), and
-specific low-level design problems.
+This repository is a comprehensive collection of detailed low-level design problems, structured into different modules
+covering Object-Oriented Programming (OOP), SOLID design principles, design patterns (Creational, Structural,
+Behavioral), and specific low-level design problems.
 
 ## Table of Contents
 
@@ -14,23 +14,35 @@ specific low-level design problems.
     - Structural [🔗](/design_patterns/structural/)
     - Behavioral [🔗](/design_patterns/behavioural/)
 4. Low-Level Design Problems [:link:](/low_level_design/)
-    - Design Pen (Entity Design Problem) [:link:](/low_level_design/design-pen/)
-    - Design Newsletter Subscription (Observer Behaviour DP) [:link:](/low_level_design/newsletter-subscription/)
-    - Apply Coupons on Shopping Cart (Decorator Structure
-      DP) [:link:](/low_level_design/apply-coupons-on-shopping-cart/)
-    - Design Null Object Handler (Avoid Null Checks In Code) [:link:](/low_level_design/design-nullobject-handler/)
-    - Design TicTacToe Version 1 (Interactive Real World Multi Player
-      Game) [:link:](/low_level_design/design-tictactoe-v1/)
-    - Design TicTacToe (Interactive Real World Multi Player Game) [:link:](/low_level_design/design-tictactoe/)
-    - Design Snake and Ladder (Real World Game Design) [:link:](/low_level_design/design-snake-and-ladder/)
-    - Design Car Rental System (Management System) [:link:](/low_level_design/design-car-rental-system/)
-    - Design Logging System (Chain Of Responsibility Behaviour DP) [:link:](/low_level_design/design-logging-system/)
-    - Design Amazon Locker [:link:](/low_level_design/design-amazon-locker/)
-    - Design Splitwise [:link:](/low_level_design/design-splitwise/)
-    - Others [:link:](/low_level_design/Others/)
-    - Rate Limiter [:link:](/low_level_design/rate-limiter/)
-    - Service Orchestrator [:link:](/low_level_design/service-orchestrator/)
-    - Request Scheduler [:link:](/low_level_design/request-scheduler/)
+    - [Design Pen (Entity Design Problem)](/low_level_design/design-pen/) 🖋️: A fundamental exercise in designing
+      entities and their relationships. Explore the concept of object modeling.
+    - [Design Newsletter Subscription (Observer Behaviour DP)](/low_level_design/newsletter-subscription/) 📬: Apply the
+      Observer pattern to create a system for managing newsletter subscriptions.
+    - [Apply Coupons on Shopping Cart (Decorator Structure DP)](/low_level_design/apply-coupons-on-shopping-cart/) 🛒:
+      Implement the Decorator pattern to add coupon functionality to a shopping cart.
+    - [Design Null Object Handler (Avoid Null Checks In Code)](/low_level_design/design-nullobject-handler/) 🚫: Solve
+      the null-check problem by designing a Null Object Handler.
+    - [Design TicTacToe Version 1 (Interactive Real World Multi Player Game)](/low_level_design/design-tictactoe-v1/) 🎮:
+      Create a basic version of TicTacToe, a multiplayer game with interactive features.
+    - [Design TicTacToe (Interactive Real World Multi Player Game)](/low_level_design/design-tictactoe/) 🕹️: Enhance the
+      TicTacToe design to include more features and improve gameplay.
+    - [Design Snake and Ladder (Real World Game Design)](/low_level_design/design-snake-and-ladder/) 🐍🎲: Dive into the
+      design of the classic Snake and Ladder game with real-world considerations.
+    - [Design Car Rental System (Management System)](/low_level_design/design-car-rental-system/) 🚗💼: Build a
+      comprehensive car rental system, covering user interactions and management aspects.
+    - [Design Logging System (Chain Of Responsibility Behaviour DP)](/low_level_design/design-logging-system/) 📝🔄:
+      Implement the Chain of Responsibility pattern for an efficient logging system.
+    - [Design Amazon Locker](/low_level_design/design-amazon-locker/) 📦🔐: Explore the design of an Amazon Locker system
+      for secure package storage and retrieval.
+    - [Design Splitwise](/low_level_design/design-splitwise/) 💸💡: Tackle the low-level design challenges of a
+      Splitwise-like expense sharing application.
+    - [Others](/low_level_design/Others/) 🧩: Miscellaneous low-level design problems.
+    - [Rate Limiter](/low_level_design/rate-limiter/) ⏳🚫: Implement a rate limiter to control the rate of incoming
+      requests.
+    - [Service Orchestrator](/low_level_design/service-orchestrator/) 🔄🔧: Design a service orchestrator to manage and
+      coordinate various services.
+    - [Request Scheduler](/low_level_design/request-scheduler/) 🗓️🕰️: Develop a request scheduler for efficient task
+      scheduling.
 
 ## OOP
 
@@ -65,9 +77,12 @@ flexibility.
 Each directory in this module corresponds to a specific low-level design problem. Inside each directory, you'll find a
 comprehensive solution along with explanations, diagrams, and code samples.
 
-If you have a new design problem to add or want to improve existing solutions, follow
-our [contribution guidelines](CONTRIBUTING.md). We welcome contributions from the community to make this repository a
-valuable resource for everyone.
+Additionally, if you have a specific design problem you'd like me to cover or if you simply want to share your thoughts,
+feel free to reach out via email at ishan.aggarwal.1423@gmail.com. Stay connected for more insightful content by
+following me on [LinkedIn](https://www.linkedin.com/in/ishan-aggarwal/) and reading my articles
+on [Medium](https://ishan-aggarwal.medium.com/).
+
+Thank you for being a part of the Low-Level Design Series community! 🚀
 
 ## Show your Support
 

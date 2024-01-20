@@ -17,6 +17,42 @@ Behavioral), and specific low-level design problems.
           through a real-life example involving a hierarchical approval system within an organization. The chain
           involves managers, senior managers, and directors, each capable of approving specific types of requests, with
           unapproved requests cascading up the hierarchy.
+        - [Command Pattern](/design_patterns/behavioural/src/main/java/command/) 🛠️: Explored through two diverse
+          examples:
+            - **Banking Scenario:** Demonstrates how commands can be used to execute various banking operations.
+            - **Air Conditioner System:** Introduces a flexible command pattern where commands are issued from a remote
+              to the AC, allowing for easy addition of new commands without altering existing code.
+        - [Iterator Design Pattern](/design_patterns/behavioural/src/main/java/iterator/) 🔍: Focuses on the creation of
+          a custom iterator that traverses a list of browsing history objects, providing a convenient way to obtain
+          desired results.
+        - [Mediator Design Pattern](/design_patterns/behavioural/src/main/java/mediator/) 🤝: Examined through a chat
+          server and client interaction, where communication between users is facilitated through a mediator (server).
+          Also applied to an auction system, illustrating how live bids are managed.
+        - [Memento Design Pattern](/design_patterns/behavioural/src/main/java/memento/) 🕰️: Explored using an article
+          storage scenario, demonstrating how the pattern enables the storage of previous states that can be recovered
+          at any point in the future.
+        - [Observer Design Pattern](/design_patterns/behavioural/src/main/java/observer/) 🔍👀: Examined through multiple
+          examples where a subject is tracked by various observers. The subject notifies registered observers,
+          triggering their update methods.
+        - [State Design Pattern](/design_patterns/behavioural/src/main/java/state/) 🔄📦: Illustrated through two
+          examples:
+            - **Order State Lifecycle:** Captures the lifecycle of an order with various states.
+            - **TV State Management:** Manages the state of a TV, showcasing the transition between different
+              operational states.
+        - [Strategy Design Pattern](/design_patterns/behavioural/src/main/java/strategy/) 🎮🔧: Explored through diverse
+          scenarios:
+            - **Bird Management System:** Demonstrates how different birds have different flying and quacking behaviors.
+            - **Payment Strategy System:** Applied during runtime for shopping payments, allowing flexible payment
+              strategy selection.
+        - [Template Design Pattern](/design_patterns/behavioural/src/main/java/template/) 📜🎮: Demonstrated through
+          examples in gaming, where different games share a common structure for initialization,
+          start, and stop methods. The play method is intentionally not overrideable by child classes, ensuring a
+          consistent template.
+        - [Visitor Design Pattern](/design_patterns/behavioural/src/main/java/visitor/) 🚗💳: Beautifully illustrated
+          through two real-life scenarios:
+            - **Car Service Center:** Represents a car visiting a service center to receive various services.
+            - **Offer System:** Deals with multiple offers and credit cards, utilizing visitor methods for each card
+              to interact with specific offers, creating numerous possible combinations.
 4. Low-Level Design Problems [:link:](/low_level_design/)
     - [Design Pen (Entity Design Problem)](/low_level_design/design-pen/) 🖋️: A fundamental exercise in designing
       entities and their relationships. Explore the concept of object modeling.

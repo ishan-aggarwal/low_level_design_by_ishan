@@ -7,8 +7,8 @@ Behavioral), and specific low-level design problems.
 
 ## Table of Contents
 
-1. Object-Oriented Programming (OOP) [:link:](/oop/)
-2. SOLID Design Principles [:link:](/design_principles/)
+1. Object-Oriented Programming (OOP) [🔗](/oop/)
+2. SOLID Design Principles [🔗](/design_principles/)
 3. Design Patterns [🔗](/design_patterns/)
     - Creational [🔗](/design_patterns/creational/)
     - Structural [🔗](/design_patterns/structural/)

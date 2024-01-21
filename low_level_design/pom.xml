@@ -23,6 +23,7 @@
         <module>design-car-rental-system</module>
         <module>design-logging-system</module>
         <module>design-snake-and-ladder</module>
+        <module>design-vending-machine</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 

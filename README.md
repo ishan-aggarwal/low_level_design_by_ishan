@@ -179,10 +179,14 @@ Beautifully illustrated through two real-life scenarios:
 Each directory in this module corresponds to a specific low-level design problem. Inside each directory, you'll find a
 comprehensive solution along with explanations, diagrams, and code samples.
 
-Additionally, if you have a specific design problem you'd like me to cover or if you simply want to share your thoughts,
-feel free to reach out via email at ishan.aggarwal.1423@gmail.com. Stay connected for more insightful content by
-following me on [LinkedIn](https://www.linkedin.com/in/ishan-aggarwal/) and reading my articles
-on [Medium](https://ishan-aggarwal.medium.com/).
+## Contact Information
+
+If you have a specific design problem you'd like me to cover or if you simply want to share your thoughts, feel free to
+reach out:
+
+- **Email:** [ishan.aggarwal.1423@gmail.com](mailto:ishan.aggarwal.1423@gmail.com)
+- **LinkedIn:** [Ishan Aggarwal](https://www.linkedin.com/in/ishan-aggarwal/)
+- **Medium Articles:** [Ishan Aggarwal on Medium](https://ishan-aggarwal.medium.com/)
 
 Thank you for being a part of the Low-Level Design Series community! 🚀
 

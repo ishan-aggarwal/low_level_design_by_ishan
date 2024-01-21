@@ -12,6 +12,42 @@ Behavioral), and specific low-level design problems.
 3. Design Patterns [🔗](/design_patterns/)
     - Creational [🔗](/design_patterns/creational/)
     - Structural [🔗](/design_patterns/structural/)
+        - [Adapter Pattern](/design_patterns/structural/src/main/java/adapter/) 🔄: Illustrated through a scenario where
+          a Pen interface lacks an implementation for assignments, and a BallPointPen is
+          incompatible. The PenAdapter bridges this gap, implementing the Pen interface with a BallPointPen reference.
+          Real-world Example: In Java, the java.util.Arrays.asList() method serves as an adapter by converting an array
+          into a List, allowing compatibility between array-based and List-based operations.
+        - [Bridge Pattern](/design_patterns/structural/src/main/java/bridge/) 🌉: Explored with two distinct
+          hierarchies - LivingThings and BreathProcess. It showcases how different LivingThings compose
+          various breath behaviors through constructor injection.
+          Real-world Example: In Java's AWT and Swing libraries, the bridge pattern is applied to separate abstraction (
+          AWT) from implementation (native platform code), enabling platform-independent GUI components.
+        - [Composite Pattern](/design_patterns/structural/src/main/java/composite/) 🌲: Demonstrated using a File System
+          example, where the composite pattern simplifies the listing of files. If it's a file,
+          it directly prints its name; if it's a directory, it recursively prints all sub-directories and files within
+          it.
+          Real-world Example: In Java's Swing library, the javax.swing.JComponent class uses the composite pattern to
+          create complex UI components by combining simpler components.
+        - [Decorator Pattern](/design_patterns/structural/src/main/java/decorator/) 🎨: Explained with the help of a
+          Pizza App, where a ToppingDecorator avoids class explosion. It holds a Pizza object and is itself a Pizza,
+          allowing flexible and dynamic pizza customization.
+          Real-world Example: In Java I/O classes, the decorator pattern is applied to add additional functionality to
+          streams. For instance, BufferedReader decorates FileReader to add buffering capabilities.
+        - [Facade Pattern](/design_patterns/structural/src/main/java/facade/) 🏢: Beautifully illustrated with an Order
+          Management System, where the complexity of order processing is hidden from the customer. Operations like
+          createOrder are abstracted behind a simplified OrderFacade API.
+          Real-world Example: The JDBC (Java Database Connectivity) API serves as a facade, simplifying database
+          interactions and shielding developers from the complexities of different database vendors.
+        - [Flyweight Pattern](/design_patterns/structural/src/main/java/flyweight/) 🪶: Explained using an Employee class
+          scenario, where developers and testers share basic properties, and instances are retrieved from a registry (
+          map).
+          Real-world Example: The java.lang.Integer class in Java utilizes the flyweight pattern for integer values
+          within a certain range, resulting in memory efficiency.
+        - [Proxy Pattern](/design_patterns/structural/src/main/java/proxy/) 🔒: Explored with an EmployeeProxyService,
+          where instead of directly invoking CRUD operations on the EmployeeService, the proxy allows additional
+          control, such as checking role-based access control (RBAC).
+          Real-world Example: In Java's RMI (Remote Method Invocation), the java.rmi.Proxy class acts as a proxy,
+          facilitating communication between client and server applications.
     - Behavioral [🔗](/design_patterns/behavioural/)
         - [Chain of Responsibility](/design_patterns/behavioural/src/main/java/chain_of_responsibility/) 🔄: Illustrated
           through a real-life example involving a hierarchical approval system within an organization. The chain
@@ -102,10 +138,31 @@ Dive into the world of design patterns, categorized into three sub-modules:
 Discover design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the
 situation.
 
-### Structural
+### Structural [🔗](/design_patterns/structural/)
 
-Explore patterns that focus on simplifying the composition of classes or objects, emphasizing the composition of classes
-or objects.
+Explore the world of structural design patterns, which focus on the composition, relationships, and organization of
+classes and objects.
+
+#### 1. Adapter Pattern [🔗](/design_patterns/structural/src/main/java/adapter/) 🔄
+
+Illustrated through a scenario where a Pen interface lacks an implementation for assignments, and a BallPointPen is
+incompatible. The PenAdapter bridges this gap, implementing the Pen interface with a BallPointPen reference.
+Real-world Example: In Java, the java.util.Arrays.asList() method serves as an adapter by converting an array into a
+List, allowing compatibility between array-based and List-based operations.
+
+#### 2. Bridge Pattern [🔗](/design_patterns/structural/src/main/java/bridge/) 🌉
+
+Explored with two distinct hierarchies - LivingThings and BreathProcess. It showcases how different LivingThings compose
+various breath behaviors through constructor injection.
+Real-world Example: In Java's AWT and Swing libraries, the bridge pattern is applied to separate abstraction (AWT) from
+implementation (native platform code), enabling platform-independent GUI components.
+
+#### 3. Composite Pattern [🔗](/design_patterns/structural/src/main/java/composite/) 🌲
+
+Demonstrated using a File System example, where the composite pattern simplifies the listing of files. If it's a file,
+it directly prints its name; if it's a directory, it recursively prints all sub-directories and files within it.
+Real-world Example: In Java's Swing library, the javax.swing.JComponent class uses the composite pattern to create
+complex UI components by combining simpler components.
 
 ### Behavioral Design Patterns [🔗](/design_patterns/behavioural/)
 

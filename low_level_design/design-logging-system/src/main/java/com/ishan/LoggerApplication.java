@@ -11,7 +11,7 @@ public class LoggerApplication {
     public static void main(String[] args) {
 
         LogManager logManager = new LogManager();
-        LogHandler logger = logManager.initializeSystem(LogRequestType.INFO);
+        LogHandler logger = logManager.initializeSystem(LogRequestType.DEBUG);
 
         LogMessage infoLogMessage = LogMessage.builder()
                 .message("This is a info log message")

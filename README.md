@@ -106,6 +106,8 @@ Behavioral), and specific low-level design problems.
       design of the classic Snake and Ladder game with real-world considerations.
     - [Design Car Rental System (Management System)](/low_level_design/design-car-rental-system/) 🚗💼: Build a
       comprehensive car rental system, covering user interactions and management aspects.
+    - [Design ATM (State and Chain Of Responsibility Behavioural DP)](/low_level_design/design-atm/)
+      💼: Design an ATM that adheres to the state behavioral design pattern.
     - [Design Vending Machine (State and Chain Of Responsibility Behavioural DP)](/low_level_design/design-vending-machine/)
       🍬🤖: Design a vending machine that adheres to the state behavioral design pattern. The vending machine,
       encapsulated within distinct states, smoothly transitions between operational phases such as idle, product

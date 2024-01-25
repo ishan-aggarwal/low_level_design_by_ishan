@@ -21,8 +21,6 @@
         <module>design_principles</module>
         <module>design_patterns</module>
         <module>low_level_design</module>
-        <module>applications</module>
-        <module>applications/rate-limiter-redis</module>
     </modules>
 
     <dependencies>

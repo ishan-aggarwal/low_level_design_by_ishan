@@ -19,8 +19,9 @@ public class MyThread extends Thread {
         System.out.println("main program started");
 
         Thread thread = new MyThread();
-        thread.start();
+//        thread.start();
 //        thread.run();
+        thread.start();
 
         System.out.println("main program ended");
     }

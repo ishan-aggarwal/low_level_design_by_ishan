@@ -8,7 +8,7 @@ public class B extends A {
 //    }
 
     void doSomething(String a) {
-        return;
+        System.out.println("doingsomething in the child class");
     }
 
     public static void main(String[] args) {

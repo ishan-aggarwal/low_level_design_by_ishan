@@ -5,6 +5,9 @@ public class Client {
         Bird eagle = new Eagle();
         Bird penguin = new Penguin();
 
+        eagle.eat();
+        penguin.eat();
+
         eagle.fly();
         penguin.fly();
     }

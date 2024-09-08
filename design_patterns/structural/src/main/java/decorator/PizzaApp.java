@@ -3,6 +3,20 @@ package decorator;
 public class PizzaApp {
 
     public static void main(String[] args) {
+
+        // ImageEditor
+        // RawImageEditor implements ImageEditor (IS-A)
+        // abstract class ImageEditorDecorator implements ImageEditor (IS-A)
+        //      ImageEditor imageEditor; (has-a)
+
+        // new GreyScaleImageEditor(new RawImageEditor())
+        // new BlurImageEditor(new GreyScaleImageEditor(new RawImageEditor()))
+
+
+        // ImageMainApp
+        // ImageEditor imageEditor = new GreyScaleImageEditor(new RawImageEditor())
+        // imageEditor.readImage();
+
         BasePizza pizza = new MargheritaPizza();
         System.out.println("Cost for Margherita Pizza:                                          " + pizza.cost());
 

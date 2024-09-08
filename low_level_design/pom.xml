@@ -26,6 +26,7 @@
         <module>design-vending-machine</module>
         <module>design-atm</module>
         <module>design-api-rate-limiter-v1</module>
+        <module>design-api-rate-limiter-v2</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 

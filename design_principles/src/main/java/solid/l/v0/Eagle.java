@@ -1,6 +1,6 @@
 package solid.l.v0;
 
-public class Eagle implements Bird {
+public class Eagle extends Bird {
     @Override
     public void fly() {
         System.out.println("Eagle is flying");

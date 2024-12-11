@@ -1,6 +1,9 @@
 package solid.l.v0;
 
-public class Penguin implements Bird {
+// if you are extending or implemeting
+// this is inheritance only -> IS-A relationship
+
+public class Penguin extends Bird {
     @Override
     public void fly() {
         throw new UnsupportedOperationException("Penguins can't fly");

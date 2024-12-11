@@ -2,7 +2,7 @@ package solid.so.v1;
 
 public class InvoiceSaver {
 
-    private Invoice invoice;
+    private final Invoice invoice;
 
     public InvoiceSaver(Invoice invoice) {
         this.invoice = invoice;

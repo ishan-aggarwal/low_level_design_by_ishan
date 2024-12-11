@@ -9,7 +9,8 @@ public class Client {
         penguin.eat();
 
         eagle.fly();
-        penguin.fly();
+
+        penguin.fly(); // LSP principal broke
     }
 }
 

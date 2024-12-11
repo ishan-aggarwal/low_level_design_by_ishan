@@ -1,7 +1,7 @@
 package solid.l.v0;
 
-public interface Bird {
-    void fly();
+public abstract class Bird {
+    abstract void fly();
 
-    void eat();
+    abstract void eat();
 }

@@ -3,6 +3,9 @@ package solid.d.v1;
 import solid.d.v0.Keyboard;
 import solid.d.v0.Mouse;
 
+// now my main laptop class which was concrete class
+// is not dependent on other concrete classses
+// it is dependent on abstact classes...
 public class Laptop {
     private Keyboard keyboard;
     private Mouse mouse;

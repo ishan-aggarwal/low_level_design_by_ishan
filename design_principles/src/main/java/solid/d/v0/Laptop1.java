@@ -2,11 +2,11 @@ package solid.d.v0;
 
 // laptop class which is a concrete class
 // is directly dependent on other concrete classes
-public class Laptop {
-    private WiredKeyboard wiredKeyboard;
-    private WiredMouse wiredMouse;
+public class Laptop1 {
+    private BluetoothKeyboard wiredKeyboard;
+    private BluetoothMouse wiredMouse;
 
-    public Laptop(WiredKeyboard wiredKeyboard, WiredMouse wiredMouse) {
+    public Laptop1(BluetoothKeyboard wiredKeyboard, BluetoothMouse wiredMouse) {
         this.wiredKeyboard = wiredKeyboard;
         this.wiredMouse = wiredMouse;
     }

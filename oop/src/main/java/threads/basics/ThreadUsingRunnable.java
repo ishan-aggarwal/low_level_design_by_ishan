@@ -5,11 +5,11 @@ public class ThreadUsingRunnable implements Runnable {
     public void run() {
 
         System.out.println("Inside the run method");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         System.out.println("run method has ended");
     }
 
@@ -17,10 +17,12 @@ public class ThreadUsingRunnable implements Runnable {
         System.out.println("main program started");
 
         ThreadUsingRunnable runnable = new ThreadUsingRunnable();
-
-
-
         Thread thread = new Thread(runnable);
+        thread.start();
+        // main" java.lang.IllegalThreadStateException
+//        thread.start();
+
+        thread = new Thread(runnable);
         thread.start();
 
 //        Thread thread1 = new Thread(() -> {

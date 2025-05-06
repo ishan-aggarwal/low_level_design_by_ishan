@@ -25,7 +25,11 @@ public class Client {
 //        ((Bird) eagle1).eat();
 //
 //        eagle.eat();
-//        ((Flyable) eagle).fly();
+        // iska matlab jo object eagle ka tha
+        // use bataya ki bhai tu flyable type ka bhi hai
+        // usmein typecase ho ja
+        // aur fir uski jo functionality hai use bhi use krne ke layak ban ja..
+        ((Flyable) eagle).fly();
 //
 //        penguin.eat();
     }

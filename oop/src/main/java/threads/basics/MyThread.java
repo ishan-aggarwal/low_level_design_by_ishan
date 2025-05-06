@@ -6,11 +6,11 @@ public class MyThread extends Thread {
     public void run() {
 
         System.out.println("Inside the run method");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+////            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         System.out.println("run method has ended");
     }
 
@@ -19,9 +19,9 @@ public class MyThread extends Thread {
         System.out.println("main program started");
 
         Thread thread = new MyThread();
-//        thread.start();
-//        thread.run();
         thread.start();
+        thread.run();
+//        thread.start();
 
         System.out.println("main program ended");
     }

@@ -1,4 +1,4 @@
-package bridge;
+package bridge.ex1;
 
 public class Fish extends LivingThings {
     private final Breath breath = new WaterBreathImpl();

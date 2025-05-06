@@ -1,4 +1,4 @@
-package bridge;
+package bridge.ex1;
 
 public class Dog extends LivingThings {
     private final Breath breath = new LandBreathImpl();

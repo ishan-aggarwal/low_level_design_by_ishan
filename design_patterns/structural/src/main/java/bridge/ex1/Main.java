@@ -1,4 +1,4 @@
-package bridge;
+package bridge.ex1;
 
 // difference between bridge and strategy pattern explained here:
 // https://itecnote.com/tecnote/r-strategy-vs-bridge-patterns/

@@ -1,5 +1,7 @@
 package bridge.dataexport;
 
+// https://medium.com/@iamprovidence/bridge-pattern-without-bullsh-t-38d7d851ed4d
+
 public class Main {
     public static void main(String[] args) {
         IExporter userExporterCsv = new UserExporter(new CsvFormatter());
